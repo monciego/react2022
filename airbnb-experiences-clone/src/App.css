@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12.5vh;
+  padding: 0 3.5rem;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.navlinks a {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.user-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  padding: 0.25rem 1.5rem;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.user-icon:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.globe-icon {
+  cursor: pointer;
+}
+
+.burger .line {
+  height: 2px;
+  width: 1.15rem;
+  background: #000;
+  margin: 0.2rem;
+}
