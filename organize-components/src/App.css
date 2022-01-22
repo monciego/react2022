@@ -1,0 +1,51 @@
+li {
+  list-style-position: inside;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border-radius: 5px;
+  height: 100%;
+  margin: 0 1rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-items > li {
+  cursor: pointer;
+}
+
+.nav-items > li:hover {
+  color: rgb(34, 34, 226);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.footer {
+  margin-top: 1.25rem;
+}
+
+.footer small a {
+  color: inherit;
+}
