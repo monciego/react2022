@@ -210,3 +210,67 @@
   text-transform: capitalize;
   font-size: 0.85rem;
 }
+
+.experience-cards {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-card {
+  width: 17rem;
+  cursor: pointer;
+}
+
+.experience-card figure {
+  width: 17rem;
+  height: 20rem;
+  position: relative;
+  transition: 0.25s all ease;
+}
+
+.experience-card figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.experience-card figure .transition-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.25s all ease;
+}
+
+.experience-card figure:hover .transition-img {
+  opacity: 1;
+}
+
+.experience-stats {
+  padding: 0.5rem 0 0.25rem 0;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.price {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.price span {
+  font-weight: 700;
+}
