@@ -4,7 +4,7 @@ const ActivityCards = ({ img, cardTitle, title, experience, description }) => {
   return (
     <div className="activity-card">
       <figure className="activity-card-image">
-        <img src={img} alt="cooking" />
+        <img src={img} alt={cardTitle} />
         <span className="activity-card-title">{cardTitle}</span>
       </figure>
       <span className="number-experience">{experience}</span>
