@@ -1,5 +1,6 @@
 import React from "react";
 import ActivityCards from "./ActivityCards";
+import { activitiesData } from "../activities";
 
 const Activities = () => {
   return (
@@ -13,9 +14,9 @@ const Activities = () => {
         <span className="learn-more">Learn more</span>
       </p>
       <div className="activitity-cards">
-        <ActivityCards />
-        <ActivityCards />
-        <ActivityCards />
+        {activitiesData.map((activity) => {
+          return <ActivityCards key={activity.id} {...activity} />;
+        })}
       </div>
     </section>
   );
