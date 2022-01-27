@@ -1,18 +1,19 @@
 import React from "react";
 
-const ExperienceCard = () => {
+const ExperienceCard = ({
+  img,
+  transitionImg,
+  rating,
+  ratingNo,
+  location,
+  title,
+  price,
+}) => {
   return (
     <div className="experience-card">
       <figure>
-        <img
-          src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-          alt="northern lights"
-        />
-        <img
-          src="https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-          alt="northern-lights"
-          className="transition-img"
-        />
+        <img src={img} alt={title} />
+        <img src={transitionImg} alt={title} className="transition-img" />
       </figure>
       <div className="experience-stats">
         <svg
@@ -31,12 +32,12 @@ const ExperienceCard = () => {
           ></path>
         </svg>
         <span>
-          5.0 (1) · <span className="location">Myrland, Norway</span>
+          {rating} ({ratingNo}) · <span className="location">{location}</span>
         </span>
       </div>
-      <h4 className="experience-title">Northern Lights Adventure</h4>
+      <h4 className="experience-title">{title}</h4>
       <p className="price">
-        <span>From Price:₱153,466</span> / person
+        <span>From Price:₱{price}</span> / person
       </p>
     </div>
   );

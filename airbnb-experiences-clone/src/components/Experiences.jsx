@@ -1,5 +1,6 @@
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
+import { experiencesData } from "../experiences";
 
 const Experiences = () => {
   return (
@@ -10,9 +11,9 @@ const Experiences = () => {
         included.
       </p>
       <div className="experience-cards">
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
+        {experiencesData.map((experience) => (
+          <ExperienceCard key={experience.id} {...experience} />
+        ))}
       </div>
     </section>
   );
