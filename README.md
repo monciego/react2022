@@ -18,6 +18,7 @@
 | ⌨️ Event Listeners                               | [</> Event Listeners](https://github.com/monciego/react2022/tree/main/event-listeners)                            |
 | ⌨️ Add Item Challenge (Introduction of useState) | [</> Add Item Challenge](https://github.com/monciego/react2022/tree/main/add-item-challenge)                      |
 | ⌨️ useState                                      | [</> useState](https://github.com/monciego/react2022/tree/main/useState)                                          |
+| ⌨️ Counter App (Challenge)                       | [</> Counter App](https://github.com/monciego/react2022/tree/main/useState-counter)                               |
 
 ---
 
