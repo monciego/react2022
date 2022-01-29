@@ -2,11 +2,11 @@ const App = () => {
   const [count, setCount] = React.useState(0);
 
   const decrement = () => {
-    setCount(count - 1);
+    setCount((prev) => prev - 1);
   };
 
   const increment = () => {
-    setCount(count + 1);
+    setCount((prev) => prev + 1);
   };
 
   return (
