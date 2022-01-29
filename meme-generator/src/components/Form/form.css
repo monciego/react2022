@@ -1,5 +1,5 @@
 form {
-  margin: 2.5rem 1.5rem;
+  margin: 2.5rem 0 1rem 0;
 }
 
 .input-group {
@@ -35,4 +35,14 @@ form .btn {
 
 form .btn:hover {
   background: linear-gradient(90deg, #531569 1.18%, #7c13a1 100%);
+}
+
+figure {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+figure img {
+  width: 100%;
+  object-fit: cover;
 }
