@@ -42,11 +42,17 @@ const App = () => {
 
 // Box component
 const Box = ({ on }) => {
-  const styles = {
-    backgroundColor: on ? "#222" : "none",
+  const [onState, setOnState] = React.useState(on);
+
+  const onFunction = () => {
+    setOnState((prev) => !prev);
   };
 
-  return <div className="box" style={styles}></div>;
+  const styles = {
+    backgroundColor: onState ? "#222" : "transparent",
+  };
+
+  return <div className="box" style={styles} onClick={onFunction}></div>;
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
