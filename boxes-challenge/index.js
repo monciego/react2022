@@ -28,15 +28,18 @@ const boxesData = [
 
 // Parent component
 
-const App = () => {
+const App = ({ darkMode }) => {
   const [boxes, setBoxes] = React.useState(boxesData);
+  const styles = {
+    backgroundColor: darkMode ? "#222222" : "#cccccc",
+  };
   return (
     <main>
       {boxes.map((data) => (
-        <div key={data.id} className="box"></div>
+        <div key={data.id} className="box" style={styles}></div>
       ))}
     </main>
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App darkMode={true} />, document.getElementById("root"));
