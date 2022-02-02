@@ -32,7 +32,23 @@ const App = () => {
   const [boxes, setBoxes] = React.useState(boxesData);
 
   const toggle = (id) => {
-    console.log(id);
+    // console.log(id);
+    setBoxes((prevBox) => {
+      const newBox = [];
+      for (let i = 0; i < prevBox.length; i++) {
+        const currentBox = prevBox[i];
+        if (currentBox.id === id) {
+          const updatedSquare = {
+            ...currentBox,
+            on: !currentBox.on,
+          };
+          newBox.push(updatedSquare);
+        } else {
+          newBox.push(currentBox);
+        }
+      }
+      return newBox;
+    });
   };
 
   return (
