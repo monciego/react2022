@@ -21,6 +21,8 @@
 | ⌨️ Counter App (Challenge)                       | [</> Counter App](https://github.com/monciego/react2022/tree/main/useState-counter)                                    |
 | ⌨️ Ternary Operator                              | [</> Ternary Operator](https://github.com/monciego/react2022/tree/main/ternary-practice)                               |
 | ⌨️ Setting state from child components           | [</> Setting state from child components](https://github.com/monciego/react2022/tree/main/state-from-child-components) |
+| ⌨️ Box Challenge                                 | [</> Box Challenge](https://github.com/monciego/react2022/tree/main/boxes-challenge)                                   |
+| ⌨️ Conditional rendering: &&                     | [</> Conditional rendering: &&](https://github.com/monciego/react2022/tree/main/conditional-rendering-%26%26)          |
 
 ---
 
