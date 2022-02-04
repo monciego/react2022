@@ -38,7 +38,7 @@ const Joke = ({ setup, punchline }) => {
     <div className="joke-container">
       {setup && <h3>{setup}</h3>}
       {isShow && <p>{punchline}</p>}
-      <button onClick={toggle}>Show Punchline</button>
+      <button onClick={toggle}>{isShow ? "Hide" : "Show"} Punchline</button>
       <hr />
     </div>
   );
