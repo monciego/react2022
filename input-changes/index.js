@@ -2,6 +2,7 @@ const Form = () => {
   const [formData, setFormData] = React.useState({
     firstName: "",
     lastName: "",
+    email: "",
   });
 
   console.log(formData);
@@ -27,6 +28,12 @@ const Form = () => {
         type="text"
         placeholder="Last Name"
         name="lastName"
+        onChange={handleChange}
+      />
+      <input
+        type="text"
+        placeholder="Email Address"
+        name="email"
         onChange={handleChange}
       />
     </form>
