@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  color: #0d0e0e;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+input {
+  margin: 1rem;
+  padding: 0.25rem;
+}
