@@ -23,18 +23,21 @@ const Form = () => {
         placeholder="First Name"
         name="firstName"
         onChange={handleChange}
+        value={formData.firstName}
       />
       <input
         type="text"
         placeholder="Last Name"
         name="lastName"
         onChange={handleChange}
+        value={formData.lastName}
       />
       <input
         type="text"
         placeholder="Email Address"
         name="email"
         onChange={handleChange}
+        value={formData.email}
       />
     </form>
   );
