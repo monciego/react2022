@@ -3,6 +3,7 @@ const Form = () => {
     firstName: "",
     lastName: "",
     email: "",
+    comments: "",
   });
 
   console.log(formData);
@@ -38,6 +39,12 @@ const Form = () => {
         name="email"
         onChange={handleChange}
         value={formData.email}
+      />
+      <textarea
+        value={formData.comments}
+        placeholder="Comments"
+        onChange={handleChange}
+        name="comments"
       />
     </form>
   );
