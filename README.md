@@ -24,6 +24,7 @@
 | ⌨️ Box Challenge                                 | [</> Box Challenge](https://github.com/monciego/react2022/tree/main/boxes-challenge)                                            |
 | ⌨️ Conditional rendering: &&                     | [</> Conditional rendering: &&](https://github.com/monciego/react2022/tree/main/conditional-rendering-%26%26)                   |
 | ⌨️ Conditional rendering: && practice            | [</> Conditional rendering: && practice](https://github.com/monciego/react2022/tree/main/conditional-rendering-%26%26-practice) |
+| ⌨️ React forms                                   | [</> React forms](https://github.com/monciego/react2022/tree/main/react-forms)                                                  |
 
 ---
 
