@@ -9,8 +9,6 @@ const Form = () => {
     favColor: "",
   });
 
-  console.log(formData);
-
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevFormData) => {
@@ -21,8 +19,13 @@ const Form = () => {
     });
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="First Name"
@@ -114,6 +117,9 @@ const Form = () => {
         <option value="indigo">Indigo</option>
         <option value="violet">Violet</option>
       </select>
+      <br />
+      <br />
+      <button type="submit">Submit</button>
     </form>
   );
 };
