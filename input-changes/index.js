@@ -5,6 +5,7 @@ const Form = () => {
     email: "",
     comments: "",
     isFriendly: true,
+    employement: "",
   });
 
   console.log(formData);
@@ -58,6 +59,41 @@ const Form = () => {
         />
         <label htmlFor="isFriendly">Are you friendly?</label>
       </div>
+      <fieldset>
+        <legend>Current employement status</legend>
+        <input
+          type="radio"
+          id="unemployed"
+          name="employement"
+          value="unemployed"
+          checked={formData.unemployement === "unemployed"}
+          onChange={handleChange}
+        />
+        <label htmlFor="unemployed">Unemployed</label>
+        <br />
+
+        <input
+          type="radio"
+          id="part-time"
+          name="employement"
+          value="part-time"
+          checked={formData.unemployement === "part-time"}
+          onChange={handleChange}
+        />
+        <label htmlFor="part-time">Part-time</label>
+        <br />
+
+        <input
+          type="radio"
+          id="full-time"
+          name="employement"
+          value="full-time"
+          checked={formData.unemployement === "full-time"}
+          onChange={handleChange}
+        />
+        <label htmlFor="full-time">Full-time</label>
+        <br />
+      </fieldset>
     </form>
   );
 };
