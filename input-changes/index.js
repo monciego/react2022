@@ -66,7 +66,7 @@ const Form = () => {
           id="unemployed"
           name="employement"
           value="unemployed"
-          checked={formData.unemployement === "unemployed"}
+          checked={formData.employement === "unemployed"}
           onChange={handleChange}
         />
         <label htmlFor="unemployed">Unemployed</label>
@@ -77,7 +77,7 @@ const Form = () => {
           id="part-time"
           name="employement"
           value="part-time"
-          checked={formData.unemployement === "part-time"}
+          checked={formData.employement === "part-time"}
           onChange={handleChange}
         />
         <label htmlFor="part-time">Part-time</label>
@@ -88,7 +88,7 @@ const Form = () => {
           id="full-time"
           name="employement"
           value="full-time"
-          checked={formData.unemployement === "full-time"}
+          checked={formData.employement === "full-time"}
           onChange={handleChange}
         />
         <label htmlFor="full-time">Full-time</label>
