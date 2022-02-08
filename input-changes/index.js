@@ -4,15 +4,17 @@ const Form = () => {
     lastName: "",
     email: "",
     comments: "",
+    isFriendly: true,
   });
 
   console.log(formData);
 
   const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
     setFormData((prevFormData) => {
       return {
         ...prevFormData,
-        [e.target.name]: e.target.value,
+        [name]: type === "checkbox" ? checked : value,
       };
     });
   };
@@ -46,6 +48,16 @@ const Form = () => {
         onChange={handleChange}
         name="comments"
       />
+      <div>
+        <input
+          type="checkbox"
+          id="isFriendly"
+          onChange={handleChange}
+          checked={formData.isFriendly}
+          name="isFriendly"
+        />
+        <label htmlFor="isFriendly">Are you friendly?</label>
+      </div>
     </form>
   );
 };
