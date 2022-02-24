@@ -4,19 +4,14 @@ const App = () => {
 
   console.log("Component rendered");
 
-  /**
-   * Challenge: re-write the useEffect
-   * It should run any time `count` changes
-   * For now, just console.log("Effect function ran")
-   */
-
   // side effects
   React.useEffect(() => {
     // first parameter - function, second parameter - dependencies array
     console.log("Effect function ran");
-    // fetch("https://swapi.dev/api/people/1").then((res) => res.json());
-    // .then((data) => setData(data));
-  }, [count]);
+    fetch("https://swapi.dev/api/people/1")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
 
   return (
     <div>
