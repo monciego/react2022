@@ -15,7 +15,8 @@ const App = () => {
   return (
     <div className="container">
       <button onClick={toggleHandler}>Toggle WindowTracker</button>
-      <WindowTracker show={show} />
+      {show && <WindowTracker />}
+      {/* <WindowTracker show={show} /> */}
     </div>
   );
 };
@@ -32,11 +33,21 @@ const WindowTracker = ({ show }) => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
   React.useEffect(() => {
-    window.addEventListener("resize", () => {
+    const watchWidth = () => {
+      console.log("Setting up");
       setWindowWidth(window.innerWidth);
-    });
+    };
+    window.addEventListener("resize", watchWidth);
+    // cleanup
+    return () => {
+      console.log("Cleaning up...");
+      window.removeEventListener("resize", watchWidth);
+    };
   }, []);
-  return <div>{show && <h1>Window width: {windowWidth}</h1>}</div>;
+  return (
+    <h1>Window width: {windowWidth}</h1>
+    // <div>{show && <h1>Window width: {windowWidth}</h1>}</div>
+  );
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
