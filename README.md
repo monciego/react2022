@@ -25,6 +25,10 @@
 | ⌨️ Conditional rendering: &&                     | [</> Conditional rendering: &&](https://github.com/monciego/react2022/tree/main/conditional-rendering-%26%26)                   |
 | ⌨️ Conditional rendering: && practice            | [</> Conditional rendering: && practice](https://github.com/monciego/react2022/tree/main/conditional-rendering-%26%26-practice) |
 | ⌨️ React forms                                   | [</> React forms](https://github.com/monciego/react2022/tree/main/react-forms)                                                  |
+| ⌨️ React form practice                           | [</> React form practice ](https://github.com/monciego/react2022/tree/main/react-form-practice)                                 |
+| ⌨️ Making API calls                              | [</> Making API calls ](https://github.com/monciego/react2022/tree/main/api-calls)                                              |
+| ⌨️ useEffect                                     | [</> useEffect ](https://github.com/monciego/react2022/tree/main/Intro-to-useEffect)                                            |
+| ⌨️ State and effect practices                    | [</> State and effect practices ](https://github.com/monciego/react2022/tree/main/state-and-effects-practices)                  |
 
 ---
 
