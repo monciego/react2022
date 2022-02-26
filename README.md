@@ -29,6 +29,7 @@
 | ⌨️ Making API calls                              | [</> Making API calls ](https://github.com/monciego/react2022/tree/main/api-calls)                                              |
 | ⌨️ useEffect                                     | [</> useEffect ](https://github.com/monciego/react2022/tree/main/Intro-to-useEffect)                                            |
 | ⌨️ State and effect practices                    | [</> State and effect practices ](https://github.com/monciego/react2022/tree/main/state-and-effects-practices)                  |
+| ⌨️ Dark Mode Toggle (Project)                    | [</> Dark Mode Toggle ](https://github.com/monciego/react2022/tree/main/dark-mode-project)                                      |
 
 ---
 
@@ -40,3 +41,4 @@
 | ⌨️ Airbnb Experiences Clone (Project) | [</> Airbnb Experiences Clone](https://github.com/monciego/react2022/tree/main/airbnb-experiences-clone) |
 | ⌨️ Travel Journal (Project)           | [</> Travel Journal](https://github.com/monciego/react2022/tree/main/travel-journal)                     |
 | ⌨️ Meme Generator (Project)           | [</> Meme Generator](https://github.com/monciego/react2022/tree/main/meme-generator)                     |
+| ⌨️ Dark Mode Toggle (Project)         | [</> Dark Mode Toggle ](https://github.com/monciego/react2022/tree/main/dark-mode-project)               |
