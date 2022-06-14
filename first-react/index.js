@@ -1,1 +1,3 @@
-ReactDOM.render(<h1>Hello World</h1>, document.getElementById("root"));
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <h1>Hello World</h1>
+);
